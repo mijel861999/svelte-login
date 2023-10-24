@@ -1,5 +1,5 @@
 
-export async function load({ fetch }) {
+export async function load({ fetch, localStorage }) {
 	const resp = await fetch('http://localhost:80/api/login', {
 		method: 'POST',
 		headers: {
